@@ -28,5 +28,6 @@ client.on('message', message => {
 });
 client.on('guildMemberAdd', member => {
 	message.guild.member(member).addRole(message.guild.roles.find('name','непотвержден').id)
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
